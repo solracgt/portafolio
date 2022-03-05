@@ -1,0 +1,466 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 1366px; /*1440px;*/
+	height: 4500px;		/* 5020px;*/
+	color: black;
+	background: #F5F5F5;
+	font-size: 1.2rem;
+	line-height: 1.4em;
+	margin: 0;
+}
+
+section {
+	background: url(32512.png) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: calc(100vh - 70px); /* 100% de la pantalla menos 70px del alto del menu */	
+}
+
+
+/* ----- main ----- */
+
+#centro {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#centro-cnt {
+	width: 90%;
+	height: 390px;
+	padding-top: 5rem;
+	padding-bottom: 1.5rem;
+}
+
+#centro-cnt-portada h1 {
+	font-size: 3rem;
+	line-height: 1.3em;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 1.5rem;
+}
+
+#centro-cnt-logo {
+	width: 25%;
+	padding: 5px;
+	float: right;
+	border-radius: 25px;
+	background: black;
+}
+
+#centro-cnt-descripcion {
+	width: 70%;
+	text-align: justify;
+	padding-top: 2rem;
+	padding-right: 10px;
+}
+
+#centro p {
+	font-size: 22px;
+	margin-bottom: 1.6em;
+	/* text-align: justify-all;*/
+}
+
+/* ----- Sobre mi  ----- */
+#about {
+	width: 90%;
+	height: 470px;
+	padding-top: 4rem;
+	padding-bottom: 1.5rem;	
+}
+
+#about h1 {
+	font-size: 2rem;
+	line-height: 1.3em;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 2rem;
+	padding-bottom: 1.2rem;
+}
+
+#about p {
+	font-size: 18px;
+	margin-bottom: 1.6em;
+	text-align: justify;
+	font-family: Verdana, sans-serif;	
+}
+
+
+/* ----- Habilidades ----- */
+#skills {
+	width: 90%;
+	height: 490px;
+	padding-top: 4rem;
+	padding-bottom: 1.5rem;	
+}
+
+#skills h1 {
+	font-size: 2rem;
+	line-height: 1.2em;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 2rem;
+	padding-bottom: 1.2rem;
+}
+
+#skills h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#skills li {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    margin: 10px 1.5%;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
+    border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
+}
+
+#skills img {
+	/*box-sizing: border-box; 
+	border: 3px solid #000000; */
+	border-radius: 10px;
+}
+
+/* ----- Pasatiempos ----- */
+#hobbies {
+	width: 90%;
+	height: 490px;	
+	padding-top: 4rem;
+	padding-bottom: 1.5rem;	
+}
+
+#hobbies h1 {
+	font-size: 2rem;
+	line-height: 1.3em;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 2rem;
+	padding-bottom: 0.25rem;
+}
+
+#hobbies h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+}
+
+#hobbies-emprende {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+   vertical-align: middle;
+}
+
+#hobbies li {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    vertical-align: top;
+    margin: 10px 1.5%;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
+    border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
+}
+
+/* ----- Formacion ----- */
+#training {
+	width: 90%;
+	height: 490px;
+	padding-top: 4rem;
+	padding-bottom: 1.5rem;	
+}
+
+#training h1 {
+	font-size: 2rem;
+	line-height: 1.3em;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+}
+
+#training h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+#training li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 10px 1.5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
+    border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
+}
+
+/* ----- Proyectos ----- */
+#project {
+	width: 90%;
+	height: 890px;	
+	padding-top: 4rem;
+	padding-bottom: 1.5rem;	
+}
+
+.project-marco {
+	border: 3px solid blue; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
+   border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
+}
+.project-izq {
+	width: 73%;
+	height: 370px;
+	float: left;
+}
+
+.project-izq img {
+	width: 95%;
+	height: 90%;
+}
+
+.project-der {
+	width: 25%;
+	height: 370px;
+	float: right;
+}
+
+.project-der img {
+	width: 47%;
+	height: 47%;
+}
+
+#project h1 {
+	font-size: 2rem;
+	line-height: 1.3em;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+}
+
+#project h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;	
+}
+
+#project li {
+    display: block;
+    text-align: center;
+    width: 50%;
+    vertical-align: top;
+    margin: 30px 1.5%;
+    padding: 8px 8px;
+    box-sizing: border-box;
+    border: 3px solid rebeccapurple; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
+    border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
+	transition: 1s all;
+}
+
+#project li:hover {
+   border-color: green;
+   background: greenyellow;
+   font-size: 1.2em;
+}
+
+/*
+#project li:active {
+    border-color: gainsboro;
+}
+*/
+
+#project a {
+	text-decoration: none;
+}
+
+#project a:hover {
+	color: darkblue;
+	background: greenyellow;
+}
+
+
+/* ----- Contacto ----- */
+#contact {
+	width: 90%;
+	height: 590px;	
+	padding-top: 4rem;
+	padding-bottom: 1.5rem;	
+}
+
+#contact h1 {
+	font-size: 1.5rem;
+	line-height: 1.3em;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 2rem;
+	padding-bottom: 1.5rem;
+}
+
+#contact-cnt {
+	margin-left: 5px;
+	padding-left: 5px;
+}
+
+.input-padron{
+	display: block;
+   margin: 0 0 20px;
+   padding: 10px 25px;
+   width: 90%;
+}
+
+#contact-izq {
+	width: 35%;
+	height: 370px;
+	float: left;
+}
+
+#contact-izq img {
+	width: 95%;
+	margin-right: 5px;
+	float: left;
+	border-radius: 25px;
+}
+
+#contact-der {
+	width: 60%;
+	height: 370px;
+	float: right;
+}
+
+
+footer {
+	width: 90%;
+	height: 20px;
+	color: black;
+	background: #929D4A;	
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	vertical-align: ;
+	font-size: 14px;
+	font-weight: bolder;
+}
+
+/*==============================================
+            Clases adicionales            
+  ==============================================*/
+/* Boton azul, se convierte a verde */
+.enviar {
+	border: 0;
+	line-height: 2.5;
+	padding: 0 20px;
+	font-size: 1.5 rem;
+	text-align: center;
+	/*text-shadow: 1px, 1px, 1px #000;*/
+	border-radius: 10px;
+
+	color: yellowgreen;
+	background-color: blue;
+	background-image: linear-gradient(to top left, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 30%, rgba(0,0,0,0));
+	box-shadow: inset 2px 2px 3px rgba(255,255,255,0.6), inset -2px -2px 3px rgba(0,0,0,0.6);
+}
+.enviar:hover {
+	color: blue;
+	background-color: rgba(8, 192, 75, 0.736);
+}
+.enviar:active {
+	box-shadow: inset -2px -2px 3px rgba(255,255,255,0.6), inset 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+
+/* --------------------- */
+
+@media only screen and (max-width: 924px) {
+
+	.cab-menu-icon {
+		display: block;
+		cursor: pointer;
+		padding: 0.5rem 1rem;
+	}
+
+	.cab-cnt-nav {
+		width: 100%;
+		margin-top: 1rem;
+	}
+
+	.cab-cnt-nav ul {
+		display: none;
+	}
+
+	.cab-cnt-nav ul.show {
+		display: block;
+	}
+
+	.cab-cnt-nav ul li {
+		display: block;
+	}
+
+	.cab-cnt-nav ul li a {
+		display: block;
+		padding: 0.5rem 0;
+		transition: all 0.4s linear; /* Se le da un tiempo para se vea lento el efecto de cambio de color */
+		border-radius: 5px;
+	}
+
+	/* ----- Reduciendo ancho de contenedores ----- */
+
+	#centro-cnt {
+		width: 55%;
+	}
+
+	#centro-about {
+		width: 55%;
+		height: 700px;
+	}
+
+	#skills {
+		width: 55%;
+	}
+
+	#hobbies {
+		width: 55%;
+	}
+
+	#training {
+		width: 55%;
+	}
+
+	#training h2 {
+		font-size: 0.9rem;
+	}
+
+	#training li {
+		width: 28%;
+	}
+
+	#project {
+		width: 55%;
+	}
+
+	#contact {
+		width: 55%;
+		height: 640px;		
+	}
+
+	footer {
+		width: 55%;
+	}
+}
+
+

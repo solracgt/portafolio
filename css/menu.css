@@ -1,0 +1,120 @@
+/* Configuracion del menu de navegacion */
+nav {
+	background: #929D4A;
+	height: 70px;
+	width: 100%;
+	position: fixed; /* Con esto se queda fijo el menu en la parte superior */
+
+	/* Efectos Flex*/
+	/*
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;	
+	*/
+}
+
+.enlace { /* Ubica la imagen del enlace del logo */
+	position: absolute;
+	padding: 10px 50px; /* 20 arriba y abajo, 50 izq y derecha */
+}
+
+.logo { /* Configura el tamaño del logo */
+	height: 50px; 
+	/* Queda centrado porque nav mide 80 - 20 arriba - 20 abajo (padding), 
+	el resto es para el logo y queda centrado */
+}
+
+nav ul { /* Configura el menu navegacion */
+	float: right; /* Envia los items a la derecha */
+	margin: 20px; /* Despega de la derecha 20 pixeles para que no quede pegado */
+	list-style: none;	/* Quita el puntito de viñeta de los links */
+}
+
+nav ul li {                   /* Configura la lista de los items del menu de navegacion */ 
+	display: inline-block;     /* Los convierte a modo horizontal */
+	/* line-height: 80px;      /* Centra los items en el alto del nav 80xp */
+	margin: 0 5px;             /* Da margenes para que no queden muy pegados */
+	box-sizing: border-box;	   /* Para que los items no se salgan del contenedor */
+}
+
+nav ul li a { /* Configura los link de los items del menu */
+	color: #fff;
+	font-size: 18px;
+	padding: 7px 13px;
+	border-radius: 3px; 
+	/* text-transform: uppercase; /* Convierte a mayusculas duplica el tamaño */
+	text-decoration: none; /* Quita el subrayado */
+}
+
+li a.active, li a:hover {
+	background: #000090;
+	transition: .5s;
+}
+
+.menubtn { /* Configura el icono para el menu moviles */
+	font-size: 30px;
+	color: #fff;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer; /* Cambia la flecha por una mano en el cursor  */ 
+	display: none; /* No se debe ver en pc o tableta solo en moviles */ 
+}
+
+#check {
+	display: none;
+	/* float: right; */
+}
+
+/* Configuracion para tabletas */
+
+@media (max-width: 952px) {
+	.enlace {
+		padding-left: 20px;
+	}
+	nav ul li a {
+		font-size: 16px;
+		padding: 3px 7px;
+	}
+}
+
+/* Configuracion para moviles */
+
+@media (max-width: 858px) {
+	.menubtn {
+		display: block;
+	}
+	ul {
+		display: none;
+		width: 140px;
+		height: 45vh;
+		background: #929D4A;
+		top: 65px;
+		left: -100%;
+		text-align: center;
+		transition: all 5s;
+		position: fixed;		
+	}
+	nav ul {
+		margin-left: 10px;
+	}
+	nav ul li {
+		display: block;
+		margin: 10px 0;
+		line-height: 15px; /* espacio entre los items */
+	}
+	/*
+	nav ul li a {
+		font-size: 20px;
+	}
+	li a:hover, li a.active {
+		background: none;
+		color: greenyellow;
+	}
+	*/
+	#check:checked ~ ul {
+		display: block;
+		left: 0;
+	}	
+}
