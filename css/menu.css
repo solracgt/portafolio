@@ -1,10 +1,13 @@
 /* Configuracion del menu de navegacion */
 nav {
-	background: #929D4A;
-	height: 70px;
-	width: 100%;
+	/*background: #929D4A;*/
+	height: 62px;
+	width: 98%;
 	position: fixed; /* Con esto se queda fijo el menu en la parte superior */
-
+	color: white;
+	background: black;
+	border: 3px solid #929D4A;
+	border-radius: 10px;	
 	/* Efectos Flex*/
 	/*
 	display: flex;
@@ -16,13 +19,15 @@ nav {
 
 .enlace { /* Ubica la imagen del enlace del logo */
 	position: absolute;
-	padding: 10px 50px; /* 20 arriba y abajo, 50 izq y derecha */
+	padding: 2px 30px; /* 20 arriba y abajo, 50 izq y derecha */
 }
 
 .logo { /* Configura el tamaño del logo */
-	height: 50px; 
+	height: 55px; 
 	/* Queda centrado porque nav mide 80 - 20 arriba - 20 abajo (padding), 
 	el resto es para el logo y queda centrado */
+	border: 3px solid #929D4A;
+	border-radius: 25px;	
 }
 
 nav ul { /* Configura el menu navegacion */
@@ -81,16 +86,16 @@ li a.active, li a:hover {
 
 /* Configuracion para moviles */
 
-@media (max-width: 858px) {
+@media (max-width: 810px) {
 	.menubtn {
 		display: block;
 	}
 	ul {
 		display: none;
-		width: 140px;
-		height: 45vh;
+		width: 97%;
+		height: 50vh;
 		background: #929D4A;
-		top: 65px;
+		top: 55px;
 		left: -100%;
 		text-align: center;
 		transition: all 5s;
@@ -104,10 +109,12 @@ li a.active, li a:hover {
 		margin: 10px 0;
 		line-height: 15px; /* espacio entre los items */
 	}
-	/*
+	
 	nav ul li a {
+		color: black;
 		font-size: 20px;
 	}
+	/*
 	li a:hover, li a.active {
 		background: none;
 		color: greenyellow;
@@ -117,4 +124,15 @@ li a.active, li a:hover {
 		display: block;
 		left: 0;
 	}	
+
+	/* Contenido */
+	#centro-cnt {
+		height: 1080px;
+	}
+	#about {
+		height: 1080px;
+	}
+	#skills {
+		height: 1080px;
+	}
 }
