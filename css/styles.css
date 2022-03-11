@@ -20,134 +20,6 @@ section {
 
 /* ----- main ----- */
 
-#centro {
-	width: 98%;
-	margin: 0 auto;
-}
-
-#centro-cnt {
-	width: 98%;
-	height: 510px;
-	padding-top: 5rem;
-	padding-bottom: 1.5rem;
-}
-
-#centro-cnt-portada h1 {
-	font-size: 3rem;
-	line-height: 1.3em;
-	text-align: left;
-	font-weight: bold;
-	padding-top: 1.5rem;
-}
-
-#centro-cnt-logo {
-	width: 20%;
-	padding: 5px;
-	float: right;
-	background: black;
-	border: 3px solid #929D4A;
-	border-radius: 25px;	
-}
-
-#centro-cnt-descripcion {
-	width: 70%;
-	text-align: justify;
-	padding-top: 2rem;
-	padding-right: 10px;
-}
-
-#centro p {
-	font-size: 22px;
-	margin-bottom: 1.6em;
-	/* text-align: justify-all;*/
-}
-
-#centro a {
-	text-decoration: none;
-	color: white;
-}
-
-#centro a:hover {
-	/*color: darkblue; */
-	color: black;
-	background: greenyellow;
-	background: #929D4A;
-}
-
-#centro td {
-	border: 3px solid #929D4A;
-	border-radius: 5px;
-	margin: 0 10px;
-	padding: 5px 10px;
-}
-
-/* ----- Sobre mi  ----- */
-#about {
-	width: 98%;
-	height: 510px;
-	padding-top: 3rem;
-	padding-bottom: 1.5rem;	
-}
-
-#about h1 {
-	font-size: 2rem;
-	line-height: 1.3em;
-	text-align: left;
-	font-weight: bold;
-	padding-top: 2rem;
-	padding-bottom: 1.2rem;
-}
-
-#about p {
-	font-size: 18px;
-	margin-bottom: 1.6em;
-	text-align: justify;
-	font-family: Verdana, sans-serif;	
-}
-
-/* ----- Habilidades ----- */
-#skills {
-	width: 98%;
-	height: 510px;
-	padding-top: 3rem;
-	padding-bottom: 1.5rem;	
-}
-
-#skills h1 {
-	font-size: 2rem;
-	line-height: 1.2em;
-	text-align: left;
-	font-weight: bold;
-	padding-top: 1.5rem;
-	padding-bottom: 1.2rem;
-}
-
-#skills h2 {
-	text-align: center;
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-
-#skills li {
-    display: inline-block;
-    text-align: center;
-    width: 22%;
-    vertical-align: top;
-    margin: 5px 1.2%;
-    padding: 8px 8px;
-    box-sizing: border-box;
-    /*border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
-    /*border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
-}
-
-#skills  li img {
-	/*box-sizing: border-box; */
-	width: 70px;
-	height: 70px;
-	border: 3px solid #929D4A;
-	border-radius: 5px;
-}
-
 /* ----- Pasatiempos ----- */
 #hobbies {
 	width: 98%;
@@ -158,20 +30,17 @@ section {
 
 #hobbies h1 {
 	font-size: 2rem;
-	line-height: 1.2em;
-	text-align: left;
 	font-weight: bold;
+	line-height: 1.3em;
+	text-align: left;
 	padding-top: 1.5rem;
 	padding-bottom: 0.25rem;
 }
 
 #hobbies h2 {
-	text-align: center;
 	font-size: 1.5rem;
 	font-weight: bold;
-	/*
-	padding-top: 1.2rem;
-	padding-bottom: 1.2rem; */
+	text-align: center;
 }
 
 #hobbies-emprende {
@@ -184,19 +53,23 @@ section {
 #hobbies li {
     display: inline-block;
     text-align: center;
-    width: 22%;
-    vertical-align: top;
+    width: 20%;
     margin: 5px 1.2%;
-    padding: 8px 8px;
+    padding: 5px 5px;
+    /*
+    vertical-align: top;
     box-sizing: border-box;
-    /*border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
-    /*border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
+    border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente
+    border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados
+     */
 }
 
-#hobbies img {
-	/*box-sizing: border-box; */
+#hobbies li img {
+	width: 70px;
+	height: 70px;
 	border: 3px solid #929D4A;
 	border-radius: 5px;
+	/*box-sizing: border-box; */	
 }
 
 /* ----- Formacion ----- */
@@ -209,33 +82,35 @@ section {
 
 #training h1 {
 	font-size: 2rem;
+	font-weight: bold;
 	line-height: 1.3em;
 	text-align: left;
-	font-weight: bold;
 	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
+	padding-bottom: 0.25rem;
 }
 
 #training h2 {
-	text-align: center;
 	font-size: 1.5rem;
 	font-weight: bold;
+	text-align: center;
 }
 
 #training li {
     display: inline-block;
     text-align: center;
-    width: 30%;
+    width: 28%;
     vertical-align: top;
     margin: 5px 1.2%;
-    padding: 8px 8px;
+    padding: 5px 5px;
+    /*
     box-sizing: border-box;
-    /*border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
+    border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
     /*border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
 }
 
-#training img {
-	/*box-sizing: border-box; */
+#training li img {
+	width: 125px;
+	height: 80px;
 	border: 3px solid #929D4A;
 	border-radius: 5px;
 }
@@ -444,6 +319,118 @@ footer button {
 }
 
 
+/* Para moviles vertical */
+@media screen and  (max-width: 810px) {
+	footer div {
+		display: none;
+	}
+	footer button {
+		display: none;
+	}
+
+	#hobbies {
+		width: 100%;
+		height: 700px;
+	}
+	#training {
+		width: 100%
+		height: 700px;
+	}
+	/* ----- Proyectos ----- */
+	#project {
+		width: 100%;
+		display: block;
+		height: 1400px;
+	}
+	#project h1 {
+		font-size: 1.75rem;
+	}
+	#project-uno {
+		display: block;
+		height: 700px;
+	}
+	#project-dos {
+		display: block;
+		height: 700px;
+	}
+
+	.project-izq {
+		width: 100%;
+		height: 50%;
+		float: none;
+		display: block;
+	}
+
+	.project-izq img {
+		width: 90%;
+		margin-left: 5px;
+	}
+
+	.project-der {
+		width: 100%;
+		height: 45%;
+		float: none;
+		display: block;
+	}
+
+	.project-der ul {
+		/*display: none; */
+		width: 90%;
+		height: 70%;
+	}
+	.project-der ul li {
+	    display: block;
+	    width: 30%;
+	    margin: 5px 1.2%;
+	    padding: 5px 5px;
+	}
+	.project-der a {
+		margin: 5px 1.2%;
+	    padding: 2px 2px;
+	}
+	.project-der img {
+		width: 20%;
+		height: 20%;
+		margin-left: 5px;	
+	}
+
+
+
+	#contact {
+		width: 100%;
+		height: 800px;
+		display: inline-block;
+	}
+	#contact-izq {
+		float: none;
+		width: 98%;
+		height: 25%;
+		margin: 10px 1.5%;
+	}
+	#contact-izq img {
+		width: 80%;
+		height: 80%
+	}
+	#contact-der {
+		float: none;
+		width: 90%;
+	}	
+	.input-padron {
+		display: block;
+    	margin: 5px 10px;
+    	padding: 2px 2px;
+    	width: 100%;
+	}
+	.enviar {
+		width: 100%;
+		margin: 10px 10px;
+	}
+
+
+}
+
+
+
 /* --------------------- */
 /*
 @media only screen and (max-width: 924px) {
@@ -524,159 +511,4 @@ footer button {
 		width: 55%;
 	}
 } */
-
-
-/* Para moviles vertical */
-@media screen and  (max-width: 800px) {
-	#centro-cnt {
-		height: 700px;
-	}
-	#centro-cnt-portada h1 {
-		font-size: 1.75rem;
-	}
-	#centro-cnt-descripcion {
-		width: 98%;
-	}
-
-	#about {
-		width: 98%;
-		height: 1300px;
-		margin-bottom: 10px;
-
-	}
-	#about h1 {
-		font-size: 1.75rem;
-	}
-
-	#skills {
-		width: 100%;
-		height: 700px;
-	}
-	#skills h1 {
-		font-size: 1.75rem;
-	}
-	#skills li {
-		display: block;
-    	width: 10%;
-    	vertical-align: top;
-    	margin: 2px 2px;
-    	padding: 2px 2px;
-	}
-	#skills li img {
-		width: 30px;
-		height: 30px;
-	}
-
-	#hobbies {
-		width: 100%;
-		height: 700px;
-	}
-	#training {
-		width: 100%
-		height: 700px;
-	}
-	/* ----- Proyectos ----- */
-	#project {
-		width: 100%;
-		display: block;
-		height: 1400px;
-	}
-	#project h1 {
-		font-size: 1.75rem;
-	}
-	#project-uno {
-		display: block;
-		height: 700px;
-	}
-	#project-dos {
-		display: block;
-		height: 700px;
-	}
-
-	.project-izq {
-		width: 100%;
-		height: 50%;
-		float: none;
-		display: block;
-	}
-
-	.project-izq img {
-		width: 90%;
-		margin-left: 5px;
-	}
-
-	.project-der {
-		width: 100%;
-		height: 45%;
-		float: none;
-		display: block;
-	}
-
-	.project-der ul {
-		/*display: none; */
-		width: 90%;
-		height: 70%;
-	}
-	.project-der ul li {
-	    display: block;
-	    width: 30%;
-	    margin: 5px 1.2%;
-	    padding: 5px 5px;
-	}
-	.project-der a {
-		margin: 5px 1.2%;
-	    padding: 2px 2px;
-	}
-	.project-der img {
-		width: 20%;
-		height: 20%;
-		margin-left: 5px;	
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	#contact {
-		width: 100%;
-		height: 800px;
-		display: inline-block;
-	}
-	#contact-izq {
-		float: none;
-		width: 98%;
-		height: 25%;
-		margin: 10px 1.5%;
-	}
-	#contact-izq img {
-		width: 80%;
-		height: 80%
-	}
-	#contact-der {
-		float: none;
-		width: 90%;
-	}	
-	.input-padron {
-		display: block;
-    	margin: 5px 10px;
-    	padding: 2px 2px;
-    	width: 100%;
-	}
-	.enviar {
-		width: 100%;
-		margin: 10px 10px;
-	}
-}
-
 

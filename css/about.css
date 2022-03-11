@@ -1,0 +1,36 @@
+/* ----- Sobre mi  ----- */
+#about {
+	width: 98%;
+	height: 550px;
+	padding-top: 3rem;
+	padding-bottom: 1.5rem;	
+}
+
+#about h1 {
+	font-size: 2rem;
+	line-height: 1.3em;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 2rem;
+	padding-bottom: 1.2rem;
+}
+
+#about p {
+	font-size: 18px;
+	margin-bottom: 1.6em;
+	text-align: justify;
+	font-family: Verdana, sans-serif;	
+}
+
+/* Para moviles vertical */
+@media screen and  (max-width: 810px) {
+
+	#about {
+		width: 100%;
+		height: 1000px;
+	}
+
+	#about h1 {
+		font-size: 1.75rem;
+	}
+}

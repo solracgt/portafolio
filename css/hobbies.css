@@ -1,0 +1,110 @@
+/* ----- Pasatiempos ----- */
+#hobbies {
+	width: 98%;
+	height: 510px;	
+	padding-top: 3rem;
+	padding-bottom: 1.5rem;	
+}
+
+#hobbies h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.3em;
+	text-align: left;
+	padding-top: 1.5rem;
+	padding-bottom: 0.25rem;
+}
+
+#hobbies h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+#hobbies h3 {
+	border: 3px solid #929D4A;
+	border-radius: 10px;	
+	margin-bottom: 5px;
+	text-align: center;	
+}
+
+#hobbies li {
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    margin: 5px 1.2%;
+    padding: 5px 5px;
+    /*
+    vertical-align: top;
+    box-sizing: border-box;
+    border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente
+    border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados
+     */
+}
+
+#hobbies li img {
+	width: 70px;
+	height: 70px;
+	border: 3px solid #929D4A;
+	border-radius: 5px;
+	/*box-sizing: border-box; */	
+}
+
+#hobbies-emprende {
+	width: 98%;
+	text-align: center;
+	vertical-align: middle;	
+	/*
+   	
+   	margin: auto auto;
+   	*/
+}
+
+#hobbies-emprende p {
+	width: 98%;
+}
+#hobbies-emprende a {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+#hobbies-emprende a:hover {
+	background: ghostwhite;
+}
+
+#hobbies-emprende img {
+	width: 110px;
+	height: 100px;
+	border: 3px solid #929D4A;	
+	border-radius: 5px;
+	margin: 0 1%;
+	margin-top: 5px;
+}
+
+#hobbies-emprende h3 {
+	width: 300px;
+	border: 3px solid #929D4A;
+	margin: 0 35.5%;
+	margin-top: 5px;
+}
+
+@media screen and  (max-width: 810px) {
+	#hobbies h1 {
+		font-size: 1.75rem;
+	}
+	#hobbies h2 {
+		font-size: 1.25rem;
+	}
+	#hobbies ul {
+		display: block;
+	}
+}
+
+/*
+	#hobbies {
+		width: 100%;
+		height: 700px;
+	}
+*/

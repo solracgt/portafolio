@@ -6,6 +6,11 @@
 	<title>Portafolio</title>
 	<!-- 	<link rel="stylesheet" href="css/reset.css">	-->
 	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/inicio.css">
+	<link rel="stylesheet" href="css/about.css">
+	<link rel="stylesheet" href="css/skills.css">
+	<link rel="stylesheet" href="css/hobbies.css">
+	<link rel="stylesheet" href="css/training.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -18,11 +23,10 @@
 			--->
 
 			<!-- <nav class="cab-cnt-nav"> -->
-			<nav>
-
+			<nav class="cab-nav">
 				<!-- Tomado de otro video de youtube --->
 				<input type="checkbox" id="check">
-				<label for="check" class="menubtn">
+				<label for="check" class="menubtn" id="barritas">
 					<i class="fa fa-bars" aria-hidden="true"></i>
 				</label>
 				<a href="#" class="enlace">
@@ -44,35 +48,41 @@
 		</div>
 	</header>
 
-	<main id="centro">
+	<main id="inicio">
 		<!-- Portada -->
-		<div id="centro-cnt">
-			<div id="centro-cnt-portada">
-				<img id="centro-cnt-logo" src="img/solrac.png" alt="">				
+		<div id="inicio-cnt">
+			<!--  <div id="centro-cnt-portada"> -->
+				<img id="inicio-cnt-logo" src="img/solrac.png" alt="">
 				<h1>
 					Hola mi nombre es <strong><em>Carlos Raùl Lòpez</em></strong> y construyo paginas web
 				</h1>
-			</div>
-			<div id="centro-cnt-descripcion">
+				
+			<!-- </div> -->
+			<!-- <div id="centro-cnt-descripcion"> -->
 				<p>Soy del pais màs lindo del mundo, Guatemala pais de la eterna primavera, mi formaciòn inicia desde 1981 con el lenguaje Basic, he tenido experiencia con lenguajes de generaciones anteriores y actualmente soy estudiante del programa de Alura Latam ONE</p>
-			</div>
+			<!-- </div> -->
 			<div>
 				<table>
 					<thead>
 						<th>Github</th>
 						<th>Twitter</th>
+						<th>Curriculum</th>
 					</thead>
 					<tbody>
 						<tr>
 							<td>
-								<a href="https://github.com/solracgt"><img src="img/github.png" alt="github" width="50px", height="50px"></a>
+								<a href="https://github.com/solracgt"><img src="img/github.png" title="GitHub"  alt="github" width="60px", height="60px"></a>
 							</td>
+
 							<td>
-								<a href="https://twitter.com/gt_solrac"><img src="img/twitter.jpg" alt="github" width="50px", height="50px"></a>
+								<a href="https://twitter.com/gt_solrac"><img src="img/twitter.jpg" title= "Twitter" alt="github" width="60px", height="60px"></a>
 							</td>
+
 							<td>
 								<!-- https://ebweb.es/pdf-descargable-web/ -->
-								<a href="https://twitter.com/gt_solrac"><img src="img/twitter.jpg" alt="github" width="50px", height="50px"></a>
+								<a href="img/CRLL-Alura.pdf" target="_blank">
+									<img src="img/pdfcvsolrac.png" title="Curriculum Vitae" alt="Curriculum Vitae" width="60" height="60">
+								</a>								
 							</td>							
 						</tr>
 					</tbody>
@@ -94,7 +104,6 @@
 			<h1>Habilidades</h1>
 			<ul>
 				<h2>Lenguajes Web</h2>
-				<!--  width="70px" height="70px"   -->
 				<li><img src="img/html5.jpg" alt="HTML5"></li>
 				<li><img src="img/css.jpg" alt="CSS"></li>
 				<li><img src="img/js.jpg" alt="JavaScript"></li>
@@ -118,28 +127,30 @@
 				<h2>Distracción</h2>
 				<li>
 					<h3>Ver TV</h3>
-					<img src="img/ptv.jpg" alt="VerTV" width="70px" height="70px">
+					<img src="img/ptv.jpg" alt="VerTV">
 				</li>
 				<li>
 					<h3>Cine</h3>
-					<img src="img/pcine.png" alt="Cine" width="70px" height="70px">
+					<img src="img/pcine.png" alt="Cine">
 				</li>
 				<li>
 					<h3>Sudoku</h3>
-					<img src="img/psudoku.jpg" alt="Sudoku" width="70px" height="70px">
+					<img src="img/psudoku.jpg" alt="Sudoku">
 				</li>
 				<li>
 					<h3>Cocinar</h3>
-					<img src="img/pcocinar.jpg" alt="Cocinar" width="70px" height="70px">
+					<img src="img/pcocinar.jpg" alt="Cocinar">
 				</li>
-				<h2>Emprendimiento</h2>
-				<div id="hobbies-emprende">
-					<li>
-						<h3>Lamparas artesanales</h3>
-						<a href="https://ilumin-arte-gt.negocio.site/"><img src="img/iluminarte.png" alt="Lamparas" width="90px" height="90px"></a>
-					</li>					
-				</div>
 			</ul>
+				<h2>Emprendimiento</h2>
+				<div id="hobbies-emprende"> 
+					<!-- <li> -->
+							<a href="https://ilumin-arte-gt.negocio.site/" target="_blank">
+								<img src="img/iluminarte.png" alt="Lamparas">
+							</a>
+							<h3>Lamparas artesanales</h3>
+					<!-- </li> -->
+				</div>
 		</div>
 
 		<!-- Formaciòn -->
@@ -149,24 +160,24 @@
 				<h2>Universitaria</h2>
 				<li>
 					<h3>Ciencias Economicas</h3>
-					<img src="img/usac.jpg" alt="USAC" width="125px" height="75px">
+					<img src="img/usac.jpg" alt="USAC">
 				</li>
 				<li>
 					<h3>Sistemas de informaciòn</h3>
-					<img src="img/ufm.png" alt="UFM" width="125px" height="75px"></li>
+					<img src="img/ufm.png" alt="UFM"></li>
 				<li>
 					<h3>Administraciòn de empresas</h3>
-					<img src="img/ugalileo.jpg" alt="GALILEO" width="125px" height="75px"></li>
+					<img src="img/ugalileo.jpg" alt="GALILEO"></li>
 				<h2>Otros cursos</h2>
 				<li>
 					<h3>Html5 - Css3 - JS</h3>
-					<img src="img/alOne.jpg" alt="" width="125px" height="75px"></li>
+					<img src="img/alOne.jpg" alt="AluraLatamOne"</li>
 				<li>
 					<h3>Gnu-Linux</h3>
-					<img src="img/ciscoNetacad.jpg" alt="" width="125px" height="75px"></li>
+					<img src="img/ciscoNetacad.jpg" alt="NetAcadCisco"></li>
 				<li>
 					<h3>Excel Avanzado</h3>
-					<img src="img/udemy.jpg" alt="" width="125px" height="75px"></li>
+					<img src="img/udemy.jpg" alt="Udemy"></li>
 			</ul>
 		</div>
 
@@ -245,7 +256,7 @@
 	</main>
 	<footer>
 		<p>
-			Página diseñada por ® Carlos Raùl - © 2022
+			Página diseñada por Carlos Raùl®  - 2022 ©
 		</p>
 		<div>
 			<button id="Entrar" type="button" name="button">Pantalla Completa</button>
