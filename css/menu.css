@@ -1,79 +1,193 @@
 /* Configuracion del menu de navegacion */
-nav {
-	/*background: #929D4A;*/
-	height: 62px;
-	width: 98%;
-	position: fixed; /* Con esto se queda fijo el menu en la parte superior */
-	color: white;
+
+.cab {
 	background: black;
 	border: 3px solid #929D4A;
 	border-radius: 10px;	
-	/* Efectos Flex*/
-	/*
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;	
-	*/
+	height: 62px;
+	left: 0;
+	position: fixed; /* Con esto se queda fijo el menu en la parte superior */
+	top: 0;
+	width: 100%;
 }
 
-.enlace { /* Ubica la imagen del enlace del logo */
-	position: absolute;
-	padding: 2px 30px; /* 20 arriba y abajo, 50 izq y derecha */
+.nav {
+	display: flex;            /* Alinea los elementos en forma horizontal */
+	justify-content: space-between; /* Los distribuye segun el espacio (logo izq Menu der) */
+	max-width: 880px;         /* Se le da un ancho para centrar en la pagina */
+	margin: 0 auto;           /* Alinea horizontalmente */
+}
+
+.nav__logo { /* Configura el icono para el menu moviles */
+	color: white;
+	cursor: pointer;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 62px;
+	padding: 0 40px;
+	text-decoration: none;    /* Quita el subrayado */	
 }
 
 .logo { /* Configura el tamaño del logo */
-	height: 55px; 
-	/* Queda centrado porque nav mide 80 - 20 arriba - 20 abajo (padding), 
-	el resto es para el logo y queda centrado */
+	height: 50px; 
 	border: 3px solid #929D4A;
 	border-radius: 25px;	
 }
 
-nav ul { /* Configura el menu navegacion */
-	float: right; /* Envia los items a la derecha */
-	margin: 20px; /* Despega de la derecha 20 pixeles para que no quede pegado */
-	list-style: none;	/* Quita el puntito de viñeta de los links */
+.nav__menu { /* Configura el menu navegacion */	
+	display: flex;
+	/*margin-right: 15px; */
+	list-style: none;	        /* Quita el puntito de viñeta de los links */
+	margin: 0;
+	padding: 0;
 }
 
-nav ul li {                   /* Configura la lista de los items del menu de navegacion */ 
-	display: inline-block;     /* Los convierte a modo horizontal */
-	/* line-height: 80px;      /* Centra los items en el alto del nav 80xp */
-	margin: 0 5px;             /* Da margenes para que no queden muy pegados */
-	box-sizing: border-box;	   /* Para que los items no se salgan del contenedor */
-}
+.nav__menu__item {
+	padding: 0 8px;
+	width: max-content;       /* Con esto las palabras compuestas no se parten */
+	line-height: 62px;
 
-nav ul li a { /* Configura los link de los items del menu */
-	color: #fff;
+	/*
 	font-size: 18px;
-	padding: 7px 13px;
-	border-radius: 3px; 
+	
+	margin: 0 10px;
 	/* text-transform: uppercase; /* Convierte a mayusculas duplica el tamaño */
+
+}
+
+.nav__menu__link {
+	border-radius: 5px; 
+	color: #929D4A;
+	cursor: pointer;	
+	padding: 7px 7px;
 	text-decoration: none; /* Quita el subrayado */
 }
 
-li a.active, li a:hover {
+.nav__menu__link:hover {	
 	background: #000090;
-	transition: .5s;
+	transition: .3s;
 }
 
-.menubtn { /* Configura el icono para el menu moviles */
-	font-size: 30px;
-	color: #fff;
-	float: right;
-	line-height: 80px;
-	margin-right: 40px;
-	cursor: pointer; /* Cambia la flecha por una mano en el cursor  */ 
-	display: none; /* No se debe ver en pc o tableta solo en moviles */ 
-}
-
-#check {
-	display: none;
-	/* float: right; */
+.open__menu,
+.close__menu {
+  display: none;
 }
 
 /* Configuracion para tabletas */
 
+@media (max-width: 845px) {
+	.nav__logo {
+		display: none;
+	}
+
+	.nav__menu {
+		margin-left: 15px;
+	}
+}
+
+/* Configuracion para moviles */
+
+@media (max-width: 768px) {
+
+	.nav__logo {
+		display: block;
+	}
+
+	.nav {
+		padding-top: 3px;
+	   padding-right: 20px;
+		width: 100%;
+	}
+
+	.nav__menu {
+		align-items: center; /* Centra elementos cuando se usa flex */		
+		background: #929D4A;
+		flex-direction: column;
+		height: calc(100% - 93px); /* Para ocupar el 100 de la pantalla - el header */
+		left: 0; 
+    	opacity: 0;
+		overflow-y: auto; /* Agrega scroll si la pantalla es muy pequeña */
+		/*padding: 20px 0; */
+		pointer-events: none;
+		position: fixed;
+		top: 63px; 
+		transition: opacity 0.3s;
+		width: 93%;
+	}
+
+	.nav__menu__item {
+		padding: 0;
+		/*line-height: 40px; /* espacio entre los items */
+	}
+	
+	.nav__menu__link {
+		color: black;
+		transition: all .3s;
+	}
+	
+	.nav__menu__link:hover {
+		background: greenyellow;
+		color: blue; 
+	}
+
+	.open__menu,
+	.close__menu {
+	   background: #929D4A;
+		border: #929D4A;
+	   cursor: pointer;
+	   display: block;
+	   height: 40px;
+	}
+
+	.open__menu {
+		margin-top: 4px;
+	}
+
+	.close-menu {
+	   align-self: flex-end;
+	   /*padding: 20px 15px;*/
+	}
+
+	.menu__opened {
+	   opacity: 1;
+	   pointer-events: all;
+	}
+
+	.open-menu:focus:not(:focus-visible),
+	.close-menu:focus:not(:focus-visible) {
+	   outline: none;
+	}
+
+}
+
+
+/*
+	.nav__menu__link:hover {
+		background: green;
+		color: white;
+	}
+	nav ul li a:hover, li a.active { */
+
+/*	.nav__menu-visible {
+		left: 0;
+	}
+*/
+
+/*
+	.nav__toggle {
+		display: block;
+	}
+
+	.nav__toggle:focus:not(:focus-visible) {
+		outline: none;
+	}
+*/
+
+
+
+/* Configuracion para tabletas */
+
+/*
 @media (max-width: 952px) {
 	.enlace {
 		padding-left: 20px;
@@ -84,55 +198,50 @@ li a.active, li a:hover {
 	}
 }
 
-/* Configuracion para moviles */
 
-@media (max-width: 810px) {
 	.menubtn {
 		display: block;
 	}
-	ul {
-		display: none;
-		width: 97%;
-		height: 50vh;
-		background: #929D4A;
-		top: 55px;
-		left: -100%;
-		text-align: center;
-		transition: all 5s;
-		position: fixed;		
-	}
-	nav ul {
-		margin-left: 10px;
-	}
-	nav ul li {
-		display: block;
-		margin: 10px 0;
-		line-height: 15px; /* espacio entre los items */
-	}
-	
-	nav ul li a {
-		color: black;
-		font-size: 20px;
-	}
-	/*
-	li a:hover, li a.active {
-		background: none;
-		color: greenyellow;
-	}
-	*/
 	#check:checked ~ ul {
 		display: block;
 		left: 0;
 	}	
 
-	/* Contenido */
-	#centro-cnt {
-		height: 1080px;
+
+	.nav__menu__link {
+		color: black;
+		font-size: 14px;
 	}
-	#about {
-		height: 1080px;
+	
+*/
+
+/*
+	.cab {
+		height: 62px;
 	}
-	#skills {
-		height: 1080px;
+
+
+
+	.nav__logo { /* Ubica la imagen del enlace del logo 
+		display: block;
+		font-size: 25px;
+		line-height: 60px;
+		padding: 0 10px;
 	}
+*/
+
+/*
+.nav__toggle {
+	background: none;
+	border: none;
+	color: white;
+	cursor: pointer;
+	display: none;
+	font-size: 30px;
+	padding: 0 20px;
+	line-height: 62px;
+	width: 100px;
 }
+
+*/
+

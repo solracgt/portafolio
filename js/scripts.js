@@ -1,3 +1,16 @@
+const menu = document.querySelector(".nav__menu");
+const openMenuBtn = document.querySelector(".open__menu");
+const closeMenuBtn = document.querySelector(".close__menu");
+
+function toggleMenu() {
+  menu.classList.toggle("menu__opened");
+}
+
+openMenuBtn.addEventListener("click", toggleMenu);
+closeMenuBtn.addEventListener("click", toggleMenu);
+
+/* ------------------- Gestión de pantalla completa ------------------- */
+
 /*var Promise = Element.requestFullscreen(options); */
 document.getElementById("Entrar").addEventListener("click", function(e){
   getFullscreen(document.documentElement);
@@ -31,7 +44,22 @@ function exitFullscreen() {
 }
 
 
+/* Comment 
 
+const navToggle = document.querySelector(".nav__toggle");
+const navMenu = document.querySelector(".nav__menu");
+
+navToggle.addEventListener("click", () => {
+	navMenu.classList.toggle("nav__menu-visible");
+
+	if (navMenu.classList.contains("nav__menu-visible")) {
+		navToggle.setAttribute("aria-label", "Cerrar menú") ;
+	} else {
+		navToggle.setAttribute("aria-label", "Abrir menú") ;
+	}
+});
+
+*/
 
 /*
 jQuery('document').ready(function($) {

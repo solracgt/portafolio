@@ -1,0 +1,119 @@
+/* ----- Contacto ----- */
+
+.top__contact {
+	padding-top: 3rem;
+	padding-bottom: 0.8rem;	
+	width: 98%;
+}
+
+.top__contact h1 {
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.3em;
+	padding-bottom: 0.25rem;
+	padding-left: 10px;
+	padding-top: 1.5rem;
+	text-align: left;
+}
+
+.top__contact h3 {
+	font-size: 0.8rem;
+}
+
+.contact__cnt {
+	width: 98%;
+}
+
+.contact__cnt p {
+	font-family: Verdana, sans-serif;	
+	font-size: 18px;
+	margin-bottom: 1em;
+	padding-left: 10px;
+	text-align: justify;
+}
+
+.contact__izq {
+	float: left;
+	padding-left: 5px;
+	width: 70%;
+}
+
+.contact__der {
+	display: flex;
+	flex-direction: column;
+	float: right;
+	width: 30%;	
+}
+
+.contact__der img {
+	border-radius: 25px;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	width: 100%;
+}
+
+.input-padron {
+	display: block;
+   margin: 0 0 10px;
+   padding: 5px 25px;
+   width: 90%;
+}
+
+form {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+@media screen and  (max-width: 768px) {
+
+	.top__contact {
+		font-size: 1rem;
+		width: 100%;
+	}
+
+	.contact__cnt {
+		display: block;
+	}
+
+	.contact__cnt p {
+		font-size: 16px;
+	}
+
+	.contact__izq {
+		float: none;
+		width: 98%;
+		/*
+		height: 25%;
+		margin: 10px 1.5%;
+		*/
+	}
+
+	.contact__der {
+		float: none;
+		width: 98%;
+	}	
+
+	.contact__der img {
+		margin-left: auto;
+		margin-right: auto;
+		width: 98%;
+	}
+
+	.input-padron {
+    	width: 98%;
+	}
+
+	.enviar {
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	form {
+		padding-left: 5px;
+	}
+}

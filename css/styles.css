@@ -1,282 +1,56 @@
+:root {
+  	--theme-color: black;
+  	--primary-color: #929D4A;
+  	--secundary-color: #F7C331;
+    --text-color: silver;
+	--text-color-inverse: black;    
+  	--navbar-shallow-color: #e5e5e5;
+  	--menu-mobile-background-color: #3A4460;
+}
+
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-	color: #929D4A;
-	background: black;
+	color: var(--primary-color);
+	background-color: var(--theme-color);
+  font-family: 'Montserrat', sans-serif;
 	font-size: 1.2rem;
 	line-height: 1.4em;
 	margin: 0;
+	padding-top: 62px;
+	/*padding: 62px 20px 0; /* Con esto baja el contenido de la pagina abajo del menu del .cab */
+	/* 90px arriba, 20px izquierda y derecha, 0 abajo */
+	width: 100%;
 }
 
+/*
 section {
 	background: url(32512.png) no-repeat;
 	background-size: cover;
 	background-position: center center;
-	height: calc(100vh - 70px); /* 100% de la pantalla menos 70px del alto del menu */	
-}
-
-/* ----- main ----- */
-
-/* ----- Pasatiempos ----- */
-#hobbies {
-	width: 98%;
-	height: 510px;	
-	padding-top: 3rem;
-	padding-bottom: 1.5rem;	
-}
-
-#hobbies h1 {
-	font-size: 2rem;
-	font-weight: bold;
-	line-height: 1.3em;
-	text-align: left;
-	padding-top: 1.5rem;
-	padding-bottom: 0.25rem;
-}
-
-#hobbies h2 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-align: center;
-}
-
-#hobbies-emprende {
-	width: 90%;
-	margin: 0 auto;
-	text-align: center;
-   vertical-align: middle;
-}
-
-#hobbies li {
-    display: inline-block;
-    text-align: center;
-    width: 20%;
-    margin: 5px 1.2%;
-    padding: 5px 5px;
-    /*
-    vertical-align: top;
-    box-sizing: border-box;
-    border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente
-    border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados
-     */
-}
-
-#hobbies li img {
-	width: 70px;
-	height: 70px;
-	border: 3px solid #929D4A;
-	border-radius: 5px;
-	/*box-sizing: border-box; */	
-}
-
-/* ----- Formacion ----- */
-#training {
-	width: 98%;
-	height: 510px;
-	padding-top: 3rem;
-	padding-bottom: 1.5rem;	
-}
-
-#training h1 {
-	font-size: 2rem;
-	font-weight: bold;
-	line-height: 1.3em;
-	text-align: left;
-	padding-top: 1.5rem;
-	padding-bottom: 0.25rem;
-}
-
-#training h2 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-align: center;
-}
-
-#training li {
-    display: inline-block;
-    text-align: center;
-    width: 28%;
-    vertical-align: top;
-    margin: 5px 1.2%;
-    padding: 5px 5px;
-    /*
-    box-sizing: border-box;
-    border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
-    /*border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
-}
-
-#training li img {
-	width: 125px;
-	height: 80px;
-	border: 3px solid #929D4A;
-	border-radius: 5px;
-}
-
-/* ----- Proyectos ----- */
-#project {
-	width: 98%; 
-	height: 1020px;	
-	padding-top: 3rem;
-	padding-bottom: 1.5rem;	
-}
-
-.project-marco {
-	border: 3px solid blue; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
-   border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
-}
-
-.project-izq {
-	width: 73%;
-	height: 370px;
-	float: left;
-}
-
-.project-izq img {
-	width: 95%;
-	height: 90%;
-}
-
-.project-der {
-	width: 25%;
-	height: 370px;
-	float: right;
-}
-
-.project-der img {
-	width: 47%;
-	height: 47%;
-}
-
-#project h1 {
-	font-size: 2rem;
-	line-height: 1.3em;
-	text-align: left;
-	font-weight: bold;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-}
-
-#project h2 {
-	text-align: center;
-	font-size: 1.5rem;
-	font-weight: bold;
-	padding-top: 1.2rem;
-	padding-bottom: 1.2rem;	
-}
-
-#project li {
-    display: block;
-    text-align: center;
-    width: 50%;
-    margin: 20px 1.2%;
-    padding: 8px 8px;
-    box-sizing: border-box;
-    /*vertical-align: top; */
-	/*border: 3px solid #929D4A;
-    border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
-	transition: 1s all;
-}
-
-#project li:hover {
-   /*color: red;
-   /*background: green; 
-   border-color: green;   
-   font-size: 1.2em;
-   */
-}
-
-/*
-#project li:active {
-    border-color: gainsboro;
+	height: calc(100vh - 70px); /* 100% de la pantalla menos 70px del alto del menu
 }
 */
 
-#project a {
-	text-decoration: none;
-	color: #929D4A;
-	margin: 20px 1.2%;
-    padding: 8px 8px;
-	border: 3px solid #929D4A;
-	border-radius: 10px;
-}
-
-#project a:hover {
-	/*color: darkblue; */
-	color: black;
-	background: #929D4A;
-	font-size: 1.2em;
-}
-
-
-/* ----- Contacto ----- */
-#contact {
-	width: 98%;
-	height: 590px;	
-	padding-top: 3rem;
-	padding-bottom: 1.5rem;	
-}
-
-#contact h1 {
-	font-size: 2rem;
-	line-height: 1.3em;
-	text-align: left;
-	font-weight: bold;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-}
-
-#contact-cnt {
-	margin-left: 5px;
-	padding-left: 5px;
-}
-
-.input-padron {
-	display: block;
-    margin: 0 0 20px;
-    padding: 5px 25px;
-    width: 90%;
-}
-
-#contact-izq {
-	width: 35%;
-	height: 370px;
-	float: left;
-}
-
-#contact-izq img {
-	width: 95%;
-	margin-right: 5px;
-	float: left;
-	border-radius: 25px;
-}
-
-#contact-der {
-	width: 60%;
-	height: 370px;
-	float: right;
-}
-
-
 footer {
-	width: 98%;
-	height: 25px;
-	color: #929D4A;
 	background: black;
 	border: 3px solid #929D4A;
 	border-radius: 10px;
-
-	 /* padding: 5px;
-	*/
+	bottom: 0;
+	color: #929D4A;
+	height: 30px;
+	padding-bottom: 5px;
+	position: fixed;
 	text-align: center;
 	vertical-align: ;
-	position: fixed;
-	bottom: 0;
+	width: 100%;
 }
+
 footer p {
-	/*display: block; */ 
 	display: inline-block;
 	font-size: 14px;
 	font-weight: bolder;
@@ -290,37 +64,79 @@ footer button {
 	margin: 0 10px;
 }
 
-
-
 /*==============================================
             Clases adicionales            
   ==============================================*/
+
+.separa {
+	width: 100%;
+}
+
+.separa__img {
+	height: 30px;
+}
+
+.visible {
+	display: none;
+}
+
+/* Para centrar imagenes */
+.centrar {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.centrar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wide {
+	grid-column: span 2; /* para manejar la union de 2 celdas de ancho */ 
+}
+
+.tail {
+	grid-row: span 2; /* para manejar la union de n celdas de alto */
+}
+
+.wide3 {
+	grid-column: span 3; /* para manejar la union de 2 celdas de ancho */ 
+}
+
+.tail3 {
+	grid-row: span 3; /* para manejar la union de n celdas de alto */
+}
+
 /* Boton azul, se convierte a verde */
 .enviar {
-	border: 0;
-	line-height: 2.5;
-	padding: 0 20px;
-	font-size: 1.5 rem;
-	text-align: center;
-	/*text-shadow: 1px, 1px, 1px #000;*/
-	border-radius: 10px;
-
-	color: yellowgreen;
 	background-color: blue;
 	background-image: linear-gradient(to top left, rgba(0,0,0,0.2), rgba(0,0,0,0.2) 30%, rgba(0,0,0,0));
 	box-shadow: inset 2px 2px 3px rgba(255,255,255,0.6), inset -2px -2px 3px rgba(0,0,0,0.6);
+	border: 0;
+	border-radius: 10px;
+	color: whitesmoke;
+	font-size: 1.5 rem;
+	line-height: 2.5;
+	margin-left: auto;
+	margin-right: auto;
+	/*padding: 0 15px;*/
+	text-align: center;
+	width: 150px;
 }
+
 .enviar:hover {
-	color: blue;
+	color: wheat;
 	background-color: rgba(8, 192, 75, 0.736);
 }
 .enviar:active {
 	box-shadow: inset -2px -2px 3px rgba(255,255,255,0.6), inset 2px 2px 3px rgba(0,0,0,0.6);
 }
 
-
 /* Para moviles vertical */
-@media screen and  (max-width: 810px) {
+@media screen and  (max-width: 768px) {
+
 	footer div {
 		display: none;
 	}
@@ -328,187 +144,12 @@ footer button {
 		display: none;
 	}
 
-	#hobbies {
-		width: 100%;
-		height: 700px;
-	}
-	#training {
-		width: 100%
-		height: 700px;
-	}
-	/* ----- Proyectos ----- */
-	#project {
-		width: 100%;
-		display: block;
-		height: 1400px;
-	}
-	#project h1 {
-		font-size: 1.75rem;
-	}
-	#project-uno {
-		display: block;
-		height: 700px;
-	}
-	#project-dos {
-		display: block;
-		height: 700px;
+	.separa {
+		height: 5px;
 	}
 
-	.project-izq {
-		width: 100%;
-		height: 50%;
-		float: none;
-		display: block;
-	}
-
-	.project-izq img {
-		width: 90%;
-		margin-left: 5px;
-	}
-
-	.project-der {
-		width: 100%;
-		height: 45%;
-		float: none;
-		display: block;
-	}
-
-	.project-der ul {
-		/*display: none; */
-		width: 90%;
-		height: 70%;
-	}
-	.project-der ul li {
-	    display: block;
-	    width: 30%;
-	    margin: 5px 1.2%;
-	    padding: 5px 5px;
-	}
-	.project-der a {
-		margin: 5px 1.2%;
-	    padding: 2px 2px;
-	}
-	.project-der img {
-		width: 20%;
-		height: 20%;
-		margin-left: 5px;	
-	}
-
-
-
-	#contact {
-		width: 100%;
-		height: 800px;
-		display: inline-block;
-	}
-	#contact-izq {
-		float: none;
-		width: 98%;
-		height: 25%;
-		margin: 10px 1.5%;
-	}
-	#contact-izq img {
+	.separa__img {
 		width: 80%;
-		height: 80%
 	}
-	#contact-der {
-		float: none;
-		width: 90%;
-	}	
-	.input-padron {
-		display: block;
-    	margin: 5px 10px;
-    	padding: 2px 2px;
-    	width: 100%;
-	}
-	.enviar {
-		width: 100%;
-		margin: 10px 10px;
-	}
-
 
 }
-
-
-
-/* --------------------- */
-/*
-@media only screen and (max-width: 924px) {
-
-	.cab-menu-icon {
-		display: block;
-		cursor: pointer;
-		padding: 0.5rem 1rem;
-	}
-
-	.cab-cnt-nav {
-		width: 100%;
-		margin-top: 1rem;
-	}
-
-	.cab-cnt-nav ul {
-		display: none;
-	}
-
-	.cab-cnt-nav ul.show {
-		display: block;
-	}
-
-	.cab-cnt-nav ul li {
-		display: block;
-	}
-
-	.cab-cnt-nav ul li a {
-		display: block;
-		padding: 0.5rem 0;
-		transition: all 0.4s linear; /* Se le da un tiempo para se vea lento el efecto de cambio de color 
-		border-radius: 5px;
-	}
-
-	/* ----- Reduciendo ancho de contenedores ----- */
-
-	/*
-	#centro-cnt {
-		width: 55%;
-	}
-
-	#centro-about {
-		width: 55%;
-		height: 700px;
-	}
-
-	
-	#skills 
-		width: 55%;
-	}
-
-	#hobbies {
-		width: 55%;
-	}
-
-	#training {
-		width: 55%;
-	}
-
-	#training h2 {
-		font-size: 0.9rem;
-	}
-
-	#training li {
-		width: 28%;
-	}
-
-	#project {
-		width: 55%;
-	}
-
-	#contact {
-		width: 55%;
-		height: 640px;		
-	}
-
-	footer {
-		width: 55%;
-	}
-} */
-

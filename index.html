@@ -1,269 +1,336 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portafolio</title>
-	<!-- 	<link rel="stylesheet" href="css/reset.css">	-->
-	<link rel="stylesheet" href="css/menu.css">
-	<link rel="stylesheet" href="css/inicio.css">
-	<link rel="stylesheet" href="css/about.css">
-	<link rel="stylesheet" href="css/skills.css">
-	<link rel="stylesheet" href="css/hobbies.css">
-	<link rel="stylesheet" href="css/training.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-	<header class="cab">
-		<div class="cab-cnt cab-cnt-flex">
-			<!--- Del video de headerfijo 
-			<a href="#" ><img class="cab-cnt-logo" src="img/solrac64.jpg" alt=""></a>
-			<span class="cab-menu-icon">Ver Menú</span>
-			--->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portafolio</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<link rel="stylesheet" href="css/inicio.css">
+		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/skills.css">
+		<link rel="stylesheet" href="css/hobbies.css">
+		<link rel="stylesheet" href="css/training.css">
+		<link rel="stylesheet" href="css/project.css">
+		<link rel="stylesheet" href="css/contact.css">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+		<script defer src="js/scripts.js"></script>
+	</head>
+	<body>
+		<header class="cab">
 
-			<!-- <nav class="cab-cnt-nav"> -->
-			<nav class="cab-nav">
-				<!-- Tomado de otro video de youtube --->
-				<input type="checkbox" id="check">
-				<label for="check" class="menubtn" id="barritas">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-				</label>
-				<a href="#" class="enlace">
+			<nav class="nav">
+				<a class="nav__logo" href="#">
 					<img class="logo" src="img/solrac64.jpg" alt="Solrac">
 				</a>
 
-				<!-- Hasta aqui -->
+				<button class="open__menu" aria-label="Abrir menú">
+          		<img src="img/iconomenu.svg" alt="abrir menú" />
+        		</button>
 
-				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#about">Sobre mi</a></li>
-					<li><a href="#skills">Habilidades</a></li>
-					<li><a href="#hobbies">Pasatiempos</a></li>
-					<li><a href="#training">Formaciòn</a></li>
-					<li><a href="#project">Proyectos</a></li>
-					<li><a href="#contact">Contacto</a></li>
+				<ul class="nav__menu">
+					<!-- Portada
+		         <button class="close__menu" aria-label="Cerrar menú">
+		         	<img src="img/iconoclose.svg" alt="cerrar menú" />
+	        		</button>
+	        		 -->
+
+					<li class="nav__menu__item">
+						<a class="nav__menu__link" href="#">Inicio</a>
+					</li>
+					<li class="nav__menu__item">
+						<a class="nav__menu__link" href="#about">Sobre mi</a>
+					</li>
+					<li class="nav__menu__item">
+						<a class="nav__menu__link" href="#skills">Habilidades</a>
+					</li>
+					<li class="nav__menu__item">
+						<a class="nav__menu__link" href="#hobbies">Pasatiempos</a>
+					</li>
+					<li class="nav__menu__item">
+						<a class="nav__menu__link" href="#training">Formaciòn</a>
+					</li>
+					<li class="nav__menu__item">
+						<a class="nav__menu__link" href="#project">Proyectos</a>
+					</li>
+					<li class="nav__menu__item">
+						<a class="nav__menu__link" href="#contact">Contacto</a>
+					</li>
 				</ul>
 			</nav>
-		</div>
-	</header>
+		</header>
 
-	<main id="inicio">
-		<!-- Portada -->
-		<div id="inicio-cnt">
-			<!--  <div id="centro-cnt-portada"> -->
-				<img id="inicio-cnt-logo" src="img/solrac.png" alt="">
-				<h1>
-					Hola mi nombre es <strong><em>Carlos Raùl Lòpez</em></strong> y construyo paginas web
-				</h1>
-				
-			<!-- </div> -->
-			<!-- <div id="centro-cnt-descripcion"> -->
-				<p>Soy del pais màs lindo del mundo, Guatemala pais de la eterna primavera, mi formaciòn inicia desde 1981 con el lenguaje Basic, he tenido experiencia con lenguajes de generaciones anteriores y actualmente soy estudiante del programa de Alura Latam ONE</p>
-			<!-- </div> -->
-			<div>
-				<table>
-					<thead>
-						<th>Github</th>
-						<th>Twitter</th>
-						<th>Curriculum</th>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<a href="https://github.com/solracgt"><img src="img/github.png" title="GitHub"  alt="github" width="60px", height="60px"></a>
-							</td>
-
-							<td>
-								<a href="https://twitter.com/gt_solrac"><img src="img/twitter.jpg" title= "Twitter" alt="github" width="60px", height="60px"></a>
-							</td>
-
-							<td>
-								<!-- https://ebweb.es/pdf-descargable-web/ -->
-								<a href="img/CRLL-Alura.pdf" target="_blank">
-									<img src="img/pdfcvsolrac.png" title="Curriculum Vitae" alt="Curriculum Vitae" width="60" height="60">
-								</a>								
-							</td>							
-						</tr>
-					</tbody>
-				</table>
+		<main>
+			<!-- Portada -->
+			<section class = "inicio">
+				<div class="inicio__portada">
+					<h1>
+						Hola yo soy <strong><em>Carlos Raùl Lòpez</em></strong>, un apasionado por la informatica y del desarrollo de paginas web.
+					</h1>
+					<img src="img/solrac.png" alt="">
+				</div>
+				<div class = "inicio__desc">
+					<p>
+						Soy del pais más lindo del mundo, Guatemala pais de la eterna primavera, mi formación inicia desde 1981 con el lenguaje Basic, he tenido experiencia con lenguajes de generaciones anteriores y actualmente soy estudiante del programa de Alura Latam - ONE (Oracle Next Education)
+					</p>
+				</div>
+				<div class = "anexos">
+					<div class="anexos__item">
+						<h3>GitHub</h3>
+						<a href="https://github.com/solracgt">
+							<img src="img/github.png" title="GitHub" alt="github">
+						</a>
+					</div>
+					<div class="anexos__item">
+						<h3>Twitter</h3>
+						<a href="https://twitter.com/gt_solrac">
+							<img src="img/twitter.jpg" title= "Twitter" alt="github">
+						</a>
+					</div>
+					<div class="anexos__item">
+						<h3>Curriculum</h3>
+						<!-- https://ebweb.es/pdf-descargable-web/ -->
+						<a href="img/CRLL-Alura.pdf" target="_blank">
+							<img src="img/pdfcvsolrac.png" alt="Curriculum Vitae">
+						</a>
+					</div>
+					<div class="anexos__item">
+						<h3>Certificados</h3>
+						<a href="certgallery.html" target="_blank">
+							<img src="img/cursos.png" title="Certificados" alt="Certificados">
+						</a>
+					</div>
+				</div>
+			</section>
+			<div class="separa">
+				<img class="separa__img centrar" src="img/separa.png" alt="">
 			</div>
-		</div>
-
-		<!-- Sobre mi -->
-		<div id="about">
-			<h1>Sobre mi</h1>
-			<p>Nací en la ciudad de Guatemala, estudie ciencias económicas (Contabilidad-Administración) y luego por azar del destino reoriente mi educación a la informática, soy analista de sistemas y tengo aprobados los últimos semestres de la licenciatura en administración de sistemas de información, así como la licenciatura en administración de empresas con orientación a las telecomunicaciones.</p>
-			<p>Soy amante de la informática, la tecnología y los sistemas, autodidacta la mayoría de las veces, con la experiencia educativa y laboral que he obtenido con el correr de los años he logrado establecer un pilar de conocimiento muy fuerte que me ha permitido desarrollar aplicaciones idóneas para el mundo empresarial.</p>
-			<p>Con el correr del tiempo me fui quedando atrapado en la era de los lenguajes de las primeras generaciones; actualmente en mi proceso de actualización, como Don Quijote estoy peleando mi batalla contra los molinos de viento de los lenguajes modernos de la web.</p>
-			<p>Otro pilar en mi carrera es la experiencia adquirida en Basic, Cobol, Foxbase, etc y los sistemas operativos Unix-Linux, Windows y convertirme en experto en la suite de Microsoft office, especialmente Excel, contribuyen a que mi perfil se vea atractivo para las empresas que requieran de mis servicios.</p>
-		</div>
-
-		<!-- Habilidades -->
-		<div id="skills">
-			<h1>Habilidades</h1>
-			<ul>
+			<!------------------------------------ Sobre mi -------------------------------->
+			<section class="about" id="about">
+				<h1>Sobre mi</h1>
+				<p>Nací en la ciudad de Guatemala, estudie ciencias económicas (Contabilidad-Administración) y luego por azar del destino reoriente mi educación a la informática, soy analista de sistemas y tengo aprobados los últimos semestres de la licenciatura en administración de sistemas de información, así como la licenciatura en administración de empresas con orientación a las telecomunicaciones.</p>
+				<p>Soy amante de la informática, la tecnología y los sistemas, autodidacta la mayoría de las veces; con la experiencia educativa y laboral que he obtenido con el correr de los años he logrado establecer un pilar de conocimiento muy fuerte que me ha permitido desarrollar aplicaciones idóneas para el mundo empresarial, adicional a que tengo un conocimiento avanzado de MS Office.</p>
+				<p>Con el correr del tiempo me fui quedando atrapado en la era de los lenguajes de las primeras generaciones; actualmente en mi proceso de actualización, como Don Quijote estoy peleando mi batalla contra los molinos de viento de los lenguajes modernos de la web.</p>
+			</section>
+			<div class="separa">
+				<img class="separa__img centrar" src="img/separa.png" alt="">
+			</div>
+			<!----------------------------------- Habilidades ------------------------------>
+			<section class = "top__skills" id="skills">
+				<h1>Habilidades</h1>
 				<h2>Lenguajes Web</h2>
-				<li><img src="img/html5.jpg" alt="HTML5"></li>
-				<li><img src="img/css.jpg" alt="CSS"></li>
-				<li><img src="img/js.jpg" alt="JavaScript"></li>
-				<li><img src="img/py.jpg" alt="Python"></li>
+				<div class="skills">
+					<div class="skills__item">
+						<h3>HTML5</h3>
+						<img src="img/html5.jpg" alt="HTML5">
+					</div>
+					<div class="skills__item">
+						<h3>CSS</h3>
+						<img src="img/css.jpg" alt="CSS">
+					</div>
+					<div class="skills__item">
+						<h3>JS</h3>
+						<img src="img/js.jpg" alt="JavaScript">
+					</div>
+					<div class="skills__item">
+						<h3>Python</h3>
+						<img src="img/py.jpg" alt="Python">
+					</div>
+				</div>
 				<h2>LenguajeSaurios</h2>
-				<li><img src="img/lbasic.jpeg" alt="Basic"></li>
-				<li><img src="img/lcobol.png" alt="Cobol"></li>
-				<li><img src="img/lvfp.jpg" alt="VFP"></li>
-				<li><img src="img/lvb.jpg" alt="VB"></li>				
+				<div class="skills">
+					<div class="skills__item">
+						<h3>Basic</h3>
+						<img src="img/lbasic.jpeg" alt="BASIC">
+					</div>
+					<div class="skills__item">
+						<h3>Cobol</h3>
+						<img src="img/lcobol.png" alt="COBOL">
+					</div>
+					<div class="skills__item">
+						<h3>VFP</h3>
+						<img src="img/lvfp.jpg" alt="VFP">
+					</div>
+					<div class="skills__item">
+						<h3>VBasic</h3>
+						<img src="img/lvb.jpg" alt="VB">	
+					</div>
+				</div>
 				<h2>Microsoft Office</h2>
-				<p align="center">
-					<img src="img/microsoftoffice.jpg" alt="Excel" width="550px" height="95px">
-				</p>
-			</ul>
-		</div>
-
-		<!-- Pasatiempos -->
-		<div id="hobbies">
-			<h1>Pasatiempos</h1>
-			<ul>
+				<div class="office">
+					<img class="centrar" src="img/microsoftoffice.jpg" alt="Excel">
+				</div>
+			</section>
+			<div class="separa">
+				<img class="separa__img centrar" src="img/separa.png" alt="">
+			</div>
+			<!----------------------------------- Pasatiempos ------------------------------>
+			<section class="top__hobbies" id="hobbies">
+				<h1>Pasatiempos</h1>
 				<h2>Distracción</h2>
-				<li>
-					<h3>Ver TV</h3>
-					<img src="img/ptv.jpg" alt="VerTV">
-				</li>
-				<li>
-					<h3>Cine</h3>
-					<img src="img/pcine.png" alt="Cine">
-				</li>
-				<li>
-					<h3>Sudoku</h3>
-					<img src="img/psudoku.jpg" alt="Sudoku">
-				</li>
-				<li>
-					<h3>Cocinar</h3>
-					<img src="img/pcocinar.jpg" alt="Cocinar">
-				</li>
-			</ul>
+				<div class="hobbies">
+					<div class="hobbies__item">
+						<h3>Ver TV</h3>
+						<img src="img/ptv.jpg" alt="VerTV">
+					</div>
+
+					<div class="hobbies__item">
+						<h3>Cine</h3>
+						<img src="img/pcine.png" alt="Cine">
+					</div>
+					<div class="hobbies__item">
+						<h3>Sudoku</h3>
+						<img src="img/psudoku.jpg" alt="Sudoku">
+					</div>
+					<div class="hobbies__item">
+						<h3>Cocinar</h3>
+						<img src="img/pcocinar.jpg" alt="Cocinar">
+					</div>				
+				</div>
 				<h2>Emprendimiento</h2>
-				<div id="hobbies-emprende"> 
-					<!-- <li> -->
-							<a href="https://ilumin-arte-gt.negocio.site/" target="_blank">
-								<img src="img/iluminarte.png" alt="Lamparas">
-							</a>
-							<h3>Lamparas artesanales</h3>
-					<!-- </li> -->
+				<div class="hobbies__emprende">
+					<a href="https://ilumin-arte-gt.negocio.site/" target="_blank">
+						<img class="centrar" src="img/iluminarte.png" title="Lamparas" alt="Lamparas">
+					</a>
+					<h3>Lamparas artesanales</h3>
 				</div>
-		</div>
-
-		<!-- Formaciòn -->
-		<div id="training">
-			<h1>Formaciòn</h1>
-			<ul>
+			</section>
+			<div class="separa">
+				<img class="separa__img centrar" src="img/separa.png" alt="">
+			</div>
+			<!------------------------------------ Formaciòn ------------------------------->
+			<section class="top__training" id="training">
+				<h1>Formaciòn</h1>
 				<h2>Universitaria</h2>
-				<li>
-					<h3>Ciencias Economicas</h3>
-					<img src="img/usac.jpg" alt="USAC">
-				</li>
-				<li>
-					<h3>Sistemas de informaciòn</h3>
-					<img src="img/ufm.png" alt="UFM"></li>
-				<li>
-					<h3>Administraciòn de empresas</h3>
-					<img src="img/ugalileo.jpg" alt="GALILEO"></li>
+				<div class="training">
+					<div class="training__item">
+						<img src="img/usac.jpg" alt="USAC">
+						<h3>Ciencias Economicas</h3>
+					</div>
+					<div class="training__item">
+						<img src="img/ufm.png" alt="UFM">
+						<h3>Sistemas de informaciòn</h3>
+					</div>
+					<div class="training__item">
+						<img src="img/ugalileo.jpg" alt="GALILEO">
+						<h3>Administraciòn de empresas</h3>					
+					</div>
+				</div>
 				<h2>Otros cursos</h2>
-				<li>
-					<h3>Html5 - Css3 - JS</h3>
-					<img src="img/alOne.jpg" alt="AluraLatamOne"</li>
-				<li>
-					<h3>Gnu-Linux</h3>
-					<img src="img/ciscoNetacad.jpg" alt="NetAcadCisco"></li>
-				<li>
-					<h3>Excel Avanzado</h3>
-					<img src="img/udemy.jpg" alt="Udemy"></li>
-			</ul>
-		</div>
-
-		<!-- Proyectos -->
-		<div id="project">
-			<h1>Proyectos</h1>
-
-			<div id="project-uno">
+				<div class="training__otros">
+					<div class="training__item">
+						<img src="img/alOne.jpg" alt="AluraLatamOne">
+						<h3>Html5 - Css3 - JS</h3>
+					</div>
+					<div class="training__item">
+						<img src="img/ciscoNetacad.jpg" alt="NetAcadCisco">
+						<h3>Gnu-Linux</h3>
+					</div>
+					<div class="training__item">
+						<img src="img/udemy.jpg" alt="Udemy">
+						<h3>Excel Avanzado</h3>					
+					</div>
+				</div>
+			</section>
+			<div class="separa">
+				<img class="separa__img centrar" src="img/separa.png" alt="">
+			</div>
+			<!------------------------------------ Proyectos ------------------------------->
+			<section class="top__project" id="project">
+				<h1>Proyectos</h1>
 				<h2>Reto No. 1 - Encriptador-Desencriptador</h2>
-				<div class="project-izq">
-					<img src="img/encriptar.png" alt=""></li>
+				<div class="project" id="project-uno">
+					<div class="project__item wide3 tail">
+						<img src="img/encriptar.png" alt="">
+					</div>
+					<div class="project__item small">
+						<h3>Repositorio</h3>
+						<a href="https://github.com/solracgt/AluraOneChallenge" target="_blank">
+							<img src="img/iconorepo1.png" alt="">
+						</a>
+					</div>
+					<div class="project__item small">
+						<h3>Demostración</h3>
+						<a href="https://solracgt.github.io/AluraOneChallenge/" target="_blank">
+							<img src="img/iconodemo1.jpg" alt="">
+						</a>
+					</div>
+					<div class="project__item small">
+						<h3>Insignia</h3>
+						<img src="img/insignia1.png" alt="">
+					</div>
 				</div>
-				<div class="project-der">
-					<ul>
-						<li>
-							<a href="https://github.com/solracgt/AluraOneChallenge">Repositorio</a>
-						</li>
-						<li>
-							<a href="https://solracgt.github.io/AluraOneChallenge/">Demo</a>
-						</li>
-					</ul>
-					<img src="img/insignia1.png" alt="">
-				</div>
-			</div>
-
-			<div id="project-dos">
 				<h2>Reto No. 2 - Juego del ahorcado</h2>
-				<div class="project-izq">
-					<img src="img/horca.png" alt="" width="350px" height="300px">					
+				<div class="project" id="project-dos">
+					<div class="project__item wide3 tail">
+						<img src="img/horca.png" alt="">					
+					</div>
+					<div class="project__item small">
+						<h3>Repositorio</h3>
+						<a href="https://github.com/solracgt/horca.git" target="_blank">
+							<img src="img/iconorepo2.png" alt="">
+						</a>
+					</div>
+					<div class="project__item small">
+						<h3>Demostración</h3>
+						<a href="https://solracgt.github.io/horca/" target="_blank">
+							<img src="img/iconodemo2.jpg" alt="">
+						</a>
+					</div>
+					<div class="project__item small">
+						<h3>Insignia</h3>
+						<img src="img/insignia2.png" alt="">	
+					</div>
 				</div>
-				<div class="project-der">
-					<ul>
-						<li>
-							<a href="https://github.com/solracgt/horca.git">Repositorio</a>
-						</li>
-						<li>
-							<a href="https://solracgt.github.io/horca/">Demo</a>
-						</li>
-					</ul>
-					<img src="img/insignia2.png" alt="">
+			</section>
+			<div class="separa">
+				<img class="separa__img centrar" src="img/separa.png" alt="">
+			</div>
+			<!------------------------------------ Contacto -------------------------------->
+			<section class="top__contact" id="contact">
+				<h1>Contacto</h1>
+				<div class="contact__cnt">
+					<p>Desea mayor informaciòn sobre mis servicios, complete el formulario y me comunicare con usted a la brevedad</p>
+					<div class="contact__izq" id="contact-izq">
+			        	<form>
+			            <label for="nombreapellido">Nombre completo</label>
+			            <input class="input-padron" type="text" id="nombreapellido" required placeholder="Nombre y Apellidos">
+
+			            <label for="correoelectronico">Correo Electrónico</label>
+			            <input class="input-padron" type="email" id="correoelectronico"  required placeholder="email@dominio.com">
+
+			            <label for="asunto">Asunto</label>
+			            <input class="input-padron" type="tel" id="asunto" required placeholder="Cotizar">
+
+			            <label for="mensaje">Mensaje</label>
+			            <textarea class="input-padron" id="mensaje" cols="90" rows="5" required></textarea>
+
+			            <!-- si no se le indica value pone solamente enviar en el idioma de la pagina-->
+			        	</form>				
+					</div>
+					<div class="contact__der" id="contact-der">
+						<img src="img/contactar1.jpg" alt="">
+						<input class="enviar" type="submit" value="Enviar Formulario"> 
+					</div>
+					<h3>Por el momento no envia los datos, es un prototipo</h3>
 				</div>
+			</section>
+			<!-------------------------------------- Footer -------------------------------->		
+			<div class="separa">
+				<img class="separa__img centrar" src="img/separa.png" alt="">
+
 			</div>
-		</div>
-
-		<!-- Contacto -->
-		<div id="contact">
-			<h1>Contacto</h1>
-			<p>Desea mayor informaciòn sobre mis servicios, complete el formulario y me comunicare con usted a la brevedad</p>
-
-			<div id="contact-izq">
-				<img src="img/contactar1.jpg" alt="">				
+		</main>
+		<footer>
+			<p>Página diseñada por Carlos Raùl® - 2022 ©</p>
+			<div>
+				<button class="visible" id="Entrar" type="button" name="button">Pantalla Completa</button>
+				<button class="visible" id="Salir" type="button" name="button">Salir Pantalla Completa</button>
 			</div>
-
-			<div id="contact-der">
-	        	<form>
-	            <label for="nombreapellido">Nombre completo</label>
-	            <input type="text" id="nombreapellido" class="input-padron" required placeholder="Nombre y Apellidos">
-
-	            <label for="correoelectronico">Correo Electrónico</label>
-	            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
-
-	            <label for="asunto">Asunto</label>
-	            <input type="tel" id="asunto" class="input-padron" required placeholder="Cotizar">
-
-	            <label for="mensaje">Mensaje</label>
-	            <textarea name="" id="mensaje" cols="90" rows="5" class="input-padron" required></textarea>
-
-	            <input type="submit" value="Enviar Formulario" class="enviar"> 
-	            <!-- si no se le indica value pone solamente enviar en el idioma de la pagina-->
-	        	</form>				
-			</div>
-
-
-		</div>
-
-	</main>
-	<footer>
-		<p>
-			Página diseñada por Carlos Raùl®  - 2022 ©
-		</p>
-		<div>
-			<button id="Entrar" type="button" name="button">Pantalla Completa</button>
-			<button id="Salir" type="button" name="button">Salir Pantalla Completa</button>
-		</div>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="js/scripts.js"></script>
-</body>
+		</footer>
+		<!--
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		-->
+	</body>
 </html>

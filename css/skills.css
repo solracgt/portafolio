@@ -1,88 +1,97 @@
-/* ----- Habilidades ----- */
-#skills {
-	width: 98%;
-	height: 510px;
+/* ----- Skills ----- */
+
+.top__skills {
 	padding-top: 3rem;
-	padding-bottom: 1.5rem;	
+	padding-bottom: 0.5rem;
+	width: 98%;
 }
 
-#skills h1 {
+.top__skills h1 {
 	font-size: 2rem;
 	font-weight: bold;
 	line-height: 1.3em;
-	text-align: left;
-	padding-top: 1.5rem;
 	padding-bottom: 0.25rem;
+	padding-left: 10px;
+	padding-top: 1.5rem;
+	text-align: left;
 }
 
-#skills h2 {
+.top__skills h2 {
 	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 0.5rem;
+}
+
+.skills {
+	align-items: center;
+	display: flex;
+	/*flex-direction: row; */
+	justify-content: space-between; /* Los distribuye segun el espacio (logo izq Menu der) */	
+	margin: 0 auto;	
+	max-width: 992px;         /* Se le da un ancho para centrar en la pagina */	
+    padding: 10px 10px;
+}
+
+.skills__item {
+	border: 3px solid #929D4A;
+	border-radius: 5px;
+	margin: 0 10px;
+	padding: 5px 5px;
+	text-align: center;
+}
+
+.skills__item h3 {
+	font-size: 0.8rem;
 	font-weight: bold;
 	text-align: center;
 }
 
-#skills ul {
+.skills__item img{
+	align-items: center;
+	align-content: center;
+	border-radius: 3px;
+	width: 90px;
+	height: 90px;
 }
 
-#skills li {
-    display: inline-block;
-    text-align: center;
-    width: 20%;
-    margin: 5px 1.2%; 
-    padding: 5px 5px; 
-    /*
-	vertical-align: top;
-    box-sizing: border-box; */
-    /*border: 3px solid #000000; /* Esta es la forma abreviada, abajo esta detallada individualmente*/
-    /*border-radius: 10px; /* Cuando se indica solo un valor aplica para los 4 lados */
+.office {
+	align-items: center;
 }
 
-#skills li img {
-	width: 70px;
-	height: 70px;
+.office img {
 	border: 3px solid #929D4A;
-	border-radius: 5px;
-	/*box-sizing: border-box; */	
-}
-#skills p img {
-	border: 3px solid #929D4A;
-	border-radius: 10px;
+	border-radius: 5px;	
+	height: 90px;
+	width: 300px;
 }
 
-@media screen and  (max-width: 810px) {
-	#skills h1 {
+/* Para moviles vertical */
+@media (max-width: 768px) {
+
+	.top__skills {
+		padding-left: 10px;
+	}
+
+	.top__skills h1 {
 		font-size: 1.75rem;
+		line-height: 1.3em;
+		padding-bottom: 0.2rem;
 	}
-	#skills h2 {
+
+	.top__skills h2 {
 		font-size: 1.25rem;
+		padding-bottom: 0.2rem;
 	}
-	#skills ul {
-		display: block;
+
+	.skills {
+		display: grid;
+		gap: 2px;
+		grid-template-columns: 85px 85px 85px 85px; 
 	}
-	#skills li {
-		width: 70%;
+
+	.skills__item img{
+		width: 90%;
+		height: 90%;
 	}
-	#skills li img {
-		display: block;
-		width: 30px;
-		height: 30px;
-	}	
 }
-
-
-/*
-	#skills {
-		width: 100%;
-	}
-
-	#skills li {
-		display: block;
-    	width: 5%;
-    	margin: 2px 2px;
-    	padding: 2px 2px;
-	}
-	#skills li img {
-		width: 30px;
-		height: 30px;
-	}
-*/

@@ -1,0 +1,20 @@
+hs01 Logica de programación parte 1
+hs02 Logica de programacion parte 2
+hs03 Logica de programacion parte 3
+hs04 JavaScript introduccion al lenguaje web
+hs05 JavaScript Consolide sus conocimientos en el lenguaje de la web
+hs06 HTML5 y CSS3 Parte 1 mi primera pagina web
+hs07 HTML5 y CSS3 Parte 2 Posicionamiento, listas y navegacion
+hs08 HTML5 y CSS3 Parte 3 Trabajando con formularios y tablas
+hs09 HTML5 y CSS3 Parte 4 Avanzando en CSS
+hs10 HTML5 y CSS3 Parte Arquitectura CSS - Descomplicando los problemas
+
+Business Agility
+ss01ba Primeros pasos para la transformación ágil
+ss02ba Introduciendo el business agility en las organizaciones
+ss03ba Liderando el cambio en un ambiente de agilidad
+ss04ba Las funciones existentes en un equipo
+
+ss05dp Foco enfocarse trae mas resultados para el dia a dia
+ss06dp Habitos ser productivo para cumplir sus metas personales
+
