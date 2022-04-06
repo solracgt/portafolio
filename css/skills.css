@@ -2,8 +2,19 @@
 
 .top__skills {
 	padding-top: 3rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.8rem;
 	width: 98%;
+}
+
+.parallax3 {
+	background-attachment: fixed;
+	background-image: url(../img/s03.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain; /* LLena el espacio del contenedor */
+	background-size: 80%;
+	/*height: 100vh;*/
+	width: inherit;
 }
 
 .top__skills h1 {
@@ -17,10 +28,10 @@
 }
 
 .top__skills h2 {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	text-align: center;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.3rem;
 }
 
 .skills {
@@ -30,13 +41,13 @@
 	justify-content: space-between; /* Los distribuye segun el espacio (logo izq Menu der) */	
 	margin: 0 auto;	
 	max-width: 992px;         /* Se le da un ancho para centrar en la pagina */	
-    padding: 10px 10px;
+   padding: 10px 10px;
 }
 
 .skills__item {
 	border: 3px solid #929D4A;
 	border-radius: 5px;
-	margin: 0 10px;
+	margin: 0 5px;
 	padding: 5px 5px;
 	text-align: center;
 }
@@ -51,10 +62,48 @@
 	align-items: center;
 	align-content: center;
 	border-radius: 3px;
-	width: 90px;
-	height: 90px;
+	width: 85px;
+	height: 80px;
 }
 
+.skillsA {
+	align-content: center;
+	align-items: center;
+	/*display: flex;
+	/*flex-direction: row; */
+	/*justify-content: space-between; /* Los distribuye segun el espacio (logo izq Menu der) */	
+	margin: 0 auto;	
+	max-width: 992px;         /* Se le da un ancho para centrar en la pagina */	
+   padding: 10px 5px;
+}
+
+.skillsA__izq {
+	float: left;
+	text-align: center;
+	width: 45%;
+}
+
+.skillsA__izq img{
+	border: 3px solid #929D4A;
+	border-radius: 5px;	
+	height: 70px;
+	width: 250px;
+}
+
+.skillsA__der {
+	float: right;
+	text-align: center;	
+	width: 45%;
+}
+
+.skillsA__der img{
+	border: 3px solid #929D4A;
+	border-radius: 5px;	
+	height: 70px;
+	width: 250px;
+}
+
+/*
 .office {
 	align-items: center;
 }
@@ -65,33 +114,60 @@
 	height: 90px;
 	width: 300px;
 }
+*/
 
 /* Para moviles vertical */
 @media (max-width: 768px) {
 
 	.top__skills {
 		padding-left: 10px;
+		padding-bottom: 20px;
 	}
 
 	.top__skills h1 {
-		font-size: 1.75rem;
-		line-height: 1.3em;
-		padding-bottom: 0.2rem;
+		font-size: 1.5rem;
+		line-height: 1.2em;
+		padding-bottom: 0.1rem;
 	}
 
 	.top__skills h2 {
-		font-size: 1.25rem;
-		padding-bottom: 0.2rem;
+		font-size: 1.20rem;
+		padding-bottom: 0;
 	}
 
 	.skills {
 		display: grid;
 		gap: 2px;
-		grid-template-columns: 85px 85px 85px 85px; 
+		grid-template-columns: 80px 80px 80px 80px; 
 	}
 
 	.skills__item img{
 		width: 90%;
 		height: 90%;
 	}
+
+	.skillsA__izq {
+
+	}
+
+	.skillsA__izq h3 {
+		font-size: 1.20rem;
+		padding-bottom: 0.1rem;
+	}
+
+
+	.skillsA__izq img {
+		float: none;
+		width: 98%;
+	}
+
+	.skillsA__der h3 {
+		font-size: 1.20rem;
+		padding-bottom: 0.1rem;
+	}
+
+	.skillsA__der img {
+		float: none;
+		width: 98%;
+	}	
 }

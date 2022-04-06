@@ -2,15 +2,25 @@
 
 .top__training {
 	padding-top: 3rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.8rem;
 	width: 98%;
+}
+
+.parallax5 {
+	background-attachment: fixed;
+	background-image: url(../img/s05.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain; /* LLena el espacio del contenedor */
+	background-size: 80%;
+	width: inherit;
 }
 
 .top__training h1 {
 	font-size: 2rem;
 	font-weight: bold;
 	line-height: 1.3em;
-	padding-bottom: 0.25rem;
+	padding-bottom: 0.2rem;
 	padding-left: 10px;
 	padding-top: 1.5rem;
 	text-align: left;
@@ -20,7 +30,7 @@
 	font-size: 1.5rem;
 	font-weight: bold;
 	text-align: center;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.1rem;
 }
 
 .training {
@@ -51,8 +61,8 @@
 	align-items: center;
 	align-content: center;
 	border-radius: 3px;
+	height: 100px;
 	width: 110px;
-	height: 110px;
 }
 
 .training__otros {
@@ -62,14 +72,14 @@
 	justify-content: space-between; /* Los distribuye segun el espacio (logo izq Menu der) */	
 	margin: 0 auto;	
 	max-width: 992px;         /* Se le da un ancho para centrar en la pagina */	
-    padding: 10px 10px;
+   padding: 10px 20px;
 }
 
 .training__otros img {
 	border: 3px solid #929D4A;
 	border-radius: 5px;	
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 110px;
 }
 
 .training__otros h3 {
@@ -86,7 +96,7 @@
 	}
 
 	.top__training h1 {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 		line-height: 1.3em;
 		padding-bottom: 0.2rem;
 	}

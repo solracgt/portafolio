@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portafolio</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/styles.css">
 		<link rel="stylesheet" href="css/menu.css">
@@ -14,8 +15,8 @@
 		<link rel="stylesheet" href="css/training.css">
 		<link rel="stylesheet" href="css/project.css">
 		<link rel="stylesheet" href="css/contact.css">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 		<script defer src="js/scripts.js"></script>
+		<script defer src="js/irarriba.js"></script>
 	</head>
 	<body>
 		<header class="cab">
@@ -63,10 +64,10 @@
 
 		<main>
 			<!-- Portada -->
-			<section class = "inicio">
+			<section class = "inicio parallax1" id="inicio">
 				<div class="inicio__portada">
 					<h1>
-						Hola yo soy <strong><em>Carlos Raùl Lòpez</em></strong>, un apasionado por la informatica y del desarrollo de paginas web.
+						Hola yo soy <strong><em>Carlos Raùl Lòpez</em></strong>, un apasionado por la informatica y del desarrollo de paginas y sistemas web.
 					</h1>
 					<img src="img/solrac.png" alt="">
 				</div>
@@ -107,7 +108,7 @@
 				<img class="separa__img centrar" src="img/separa.png" alt="">
 			</div>
 			<!------------------------------------ Sobre mi -------------------------------->
-			<section class="about" id="about">
+			<section class="about parallax2" id="about">
 				<h1>Sobre mi</h1>
 				<p>Nací en la ciudad de Guatemala, estudie ciencias económicas (Contabilidad-Administración) y luego por azar del destino reoriente mi educación a la informática, soy analista de sistemas y tengo aprobados los últimos semestres de la licenciatura en administración de sistemas de información, así como la licenciatura en administración de empresas con orientación a las telecomunicaciones.</p>
 				<p>Soy amante de la informática, la tecnología y los sistemas, autodidacta la mayoría de las veces; con la experiencia educativa y laboral que he obtenido con el correr de los años he logrado establecer un pilar de conocimiento muy fuerte que me ha permitido desarrollar aplicaciones idóneas para el mundo empresarial, adicional a que tengo un conocimiento avanzado de MS Office.</p>
@@ -117,7 +118,7 @@
 				<img class="separa__img centrar" src="img/separa.png" alt="">
 			</div>
 			<!----------------------------------- Habilidades ------------------------------>
-			<section class = "top__skills" id="skills">
+			<section class = "top__skills parallax3" id="skills">
 				<h1>Habilidades</h1>
 				<h2>Lenguajes Web</h2>
 				<div class="skills">
@@ -157,16 +158,32 @@
 						<img src="img/lvb.jpg" alt="VB">	
 					</div>
 				</div>
-				<h2>Microsoft Office</h2>
-				<div class="office">
-					<img class="centrar" src="img/microsoftoffice.jpg" alt="Excel">
+
+				<h2>Aplicativos</h2>
+				<div class="skillsA">
+					<div class="skillsA__izq">
+						<h3>Microsoft Office</h3>
+						<!--
+						 <img class="centrar" src="img/microsoftoffice.jpg" alt="Excel">
+						-->
+						<img src="img/microsoftoffice.jpg" alt="Excel">						
+					</div>
+					<div class="skillsA__der">
+						<h3>Scriptcase RAD</h3>
+						<img src="img/scriptcase.jpg" alt="Excel">
+					</div>					
+						<!--
+					<div class="office">
+						
+					</div>
+						-->					
 				</div>
 			</section>
 			<div class="separa">
 				<img class="separa__img centrar" src="img/separa.png" alt="">
 			</div>
 			<!----------------------------------- Pasatiempos ------------------------------>
-			<section class="top__hobbies" id="hobbies">
+			<section class="top__hobbies parallax4" id="hobbies">
 				<h1>Pasatiempos</h1>
 				<h2>Distracción</h2>
 				<div class="hobbies">
@@ -191,7 +208,7 @@
 				<h2>Emprendimiento</h2>
 				<div class="hobbies__emprende">
 					<a href="https://ilumin-arte-gt.negocio.site/" target="_blank">
-						<img class="centrar" src="img/iluminarte.png" title="Lamparas" alt="Lamparas">
+						<img class="centrar" src="img/iluminarte.png" title="Haz click para ingresar" alt="Lamparas">
 					</a>
 					<h3>Lamparas artesanales</h3>
 				</div>
@@ -200,7 +217,7 @@
 				<img class="separa__img centrar" src="img/separa.png" alt="">
 			</div>
 			<!------------------------------------ Formaciòn ------------------------------->
-			<section class="top__training" id="training">
+			<section class="top__training parallax5" id="training">
 				<h1>Formaciòn</h1>
 				<h2>Universitaria</h2>
 				<div class="training">
@@ -293,35 +310,46 @@
 				<div class="contact__cnt">
 					<p>Desea mayor informaciòn sobre mis servicios, complete el formulario y me comunicare con usted a la brevedad</p>
 					<div class="contact__izq" id="contact-izq">
-			        	<form>
+
+			        	<form action="https://formsubmit.co/solrac.gt@gmail.com" method="post">
 			            <label for="nombreapellido">Nombre completo</label>
-			            <input class="input-padron" type="text" id="nombreapellido" required placeholder="Nombre y Apellidos">
+			            <input class="input-padron" id="nombreapellido" name="Nombre" type="text"  required placeholder="Nombre y Apellidos">
 
 			            <label for="correoelectronico">Correo Electrónico</label>
-			            <input class="input-padron" type="email" id="correoelectronico"  required placeholder="email@dominio.com">
+			            <input class="input-padron" id="correoelectronico" name="Email" type="email"  required placeholder="email@dominio.com">
 
 			            <label for="asunto">Asunto</label>
-			            <input class="input-padron" type="tel" id="asunto" required placeholder="Cotizar">
+			            <input class="input-padron" id="asunto" name="Asunto" type="tel" required placeholder="Cotizar">
 
 			            <label for="mensaje">Mensaje</label>
-			            <textarea class="input-padron" id="mensaje" cols="90" rows="5" required></textarea>
+			            <textarea class="input-padron" id="mensaje" name="Mensaje" cols="90" rows="5" required></textarea>
 
+							<input class="enviar" type="submit" value="Enviar Formulario"> 
 			            <!-- si no se le indica value pone solamente enviar en el idioma de la pagina-->
-			        	</form>				
+			        	</form>
+
 					</div>
 					<div class="contact__der" id="contact-der">
 						<img src="img/contactar1.jpg" alt="">
-						<input class="enviar" type="submit" value="Enviar Formulario"> 
+
 					</div>
-					<h3>Por el momento no envia los datos, es un prototipo</h3>
+					Contactame:
+					<h3>Email: <a href="mailto:solrac.gt@gmail.com" id="email">solrac.gt@gmail.com</a></h3>
+					<h3>Whatsapp: <a href="https://api.whatsapp.com/send/?phone=50235373973&text&app_absent=0">(502) 3537 3973 Solo mensaje</a></h3>
 				</div>
 			</section>
-			<!-------------------------------------- Footer -------------------------------->		
 			<div class="separa">
 				<img class="separa__img centrar" src="img/separa.png" alt="">
-
 			</div>
+			<section class="final">
+				<h3>That`s all folks</h3>
+				<br>
+			</section>
 		</main>
+
+		<img onclick="topFunction()" id="myBtn" title="Ir hacia arriba" src="img/flecha-hacia-arriba.png" alt="ir arriba">
+
+		<!-------------------------------------- Footer -------------------------------->		
 		<footer>
 			<p>Página diseñada por Carlos Raùl® - 2022 ©</p>
 			<div>

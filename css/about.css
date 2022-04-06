@@ -2,8 +2,19 @@
 
 .about {
 	padding-top: 2.5rem;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.8rem;
 	width: 98%;
+}
+
+.parallax2 {
+	background-attachment: fixed;
+	background-image: url(../img/s02.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain; /* LLena el espacio del contenedor */
+	background-size: 80%;
+	/*height: 100vh; */
+	width: inherit;
 }
 
 .about h1 {
@@ -34,6 +45,6 @@
 	}
 
 	.about h1 {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 	}
 }

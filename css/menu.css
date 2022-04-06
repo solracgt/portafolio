@@ -29,9 +29,10 @@
 }
 
 .logo { /* Configura el tamaño del logo */
-	height: 50px; 
+	height: 96%; 
 	border: 3px solid #929D4A;
-	border-radius: 25px;	
+	border-radius: 25px;
+	line-height: 62px;
 }
 
 .nav__menu { /* Configura el menu navegacion */	
@@ -91,6 +92,10 @@
 
 	.nav__logo {
 		display: block;
+	}
+
+	.logo {
+		height: 50px;
 	}
 
 	.nav {

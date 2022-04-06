@@ -17,7 +17,8 @@
 body {
 	color: var(--primary-color);
 	background-color: var(--theme-color);
-  font-family: 'Montserrat', sans-serif;
+
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2rem;
 	line-height: 1.4em;
 	margin: 0;
@@ -35,6 +36,22 @@ section {
 	height: calc(100vh - 70px); /* 100% de la pantalla menos 70px del alto del menu
 }
 */
+
+#myBtn {
+  	display: none; /* Oculto por defecto */
+  	position: fixed; /* Posición fija / pegajosa*/
+  	bottom: 30px; /* Coloque el botón en la parte inferior de la página. */
+  	right: 25px; /* Coloca el botón 30px de la derecha. */
+  	z-index: 99; /* Asegúrese de que no se superponga */
+  	cursor: pointer; /* Añadir un puntero del ratón en el hover */
+	border-radius:250px;
+	width: 5%;
+}
+
+#myBtn:hover {
+   box-shadow: 2px 2px 2px 2px;
+}
+
 
 footer {
 	background: black;
@@ -70,10 +87,11 @@ footer button {
 
 .separa {
 	width: 100%;
+	height: 40px;
 }
 
 .separa__img {
-	height: 30px;
+	height: 75%;
 }
 
 .visible {
@@ -123,7 +141,7 @@ footer button {
 	margin-right: auto;
 	/*padding: 0 15px;*/
 	text-align: center;
-	width: 150px;
+	width: 200px;
 }
 
 .enviar:hover {
@@ -133,6 +151,14 @@ footer button {
 .enviar:active {
 	box-shadow: inset -2px -2px 3px rgba(255,255,255,0.6), inset 2px 2px 3px rgba(0,0,0,0.6);
 }
+
+.final {
+	padding-top: 3rem;
+	padding-bottom: 0.8rem;
+	width: 98%;
+	text-align: center;
+}
+
 
 /* Para moviles vertical */
 @media screen and  (max-width: 768px) {
@@ -145,7 +171,7 @@ footer button {
 	}
 
 	.separa {
-		height: 5px;
+		height: 10px;
 	}
 
 	.separa__img {

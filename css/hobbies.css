@@ -1,9 +1,20 @@
 /* ----- Pasatiempos ----- */
 
 .top__hobbies {
-	padding-top: 3rem;
-	padding-bottom: 0.5rem;
+	padding-top: 2.8rem;
+	padding-bottom: 0.8rem;
 	width: 98%;
+}
+
+.parallax4 {
+	background-attachment: fixed;
+	background-image: url(../img/s04.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain; /* LLena el espacio del contenedor */
+	background-size: 80%;
+	/*height: 100vh;*/
+	width: inherit;
 }
 
 .top__hobbies h1 {
@@ -17,10 +28,10 @@
 }
 
 .top__hobbies h2 {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	text-align: center;
-	padding-bottom: 0.5rem;
+	padding-bottom: 0.3rem;
 }
 
 .hobbies {
@@ -80,7 +91,7 @@
 	}
 
 	.top__hobbies h1 {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 		line-height: 1.3em;
 		padding-bottom: 0.2rem;
 	}
